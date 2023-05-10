@@ -1,21 +1,26 @@
+import CountCointainer from '..\src\componentes\CountContainer.jsx'
+
 const App = () => {
 
-  //let count = 0
   const add = () => {
-  //  count++
-  //  console.log(count)
-
+      setCount(count+1)
+      console.log(count)
   };
 
   const [count, setCount] = useState(0)
 
+   reset = () => {
+    setCount(0)
+    console.log(count)
+  }
+
+  substract = () => {
+    setCount(count-1)
+    console.log(count)
+  }
+
   return (
-    <>
-    <div>
-      <button onClick={add}>add</button>
-      <h1>{count}</h1>
-    </div>
-    </>
+    <CountCointainer/>
   )
 }
 
