@@ -1,5 +1,5 @@
 import { useState } from "react"
-import CountButton from '..\src\componentes\CountButton.jsx'
+import CountButton from './CountButton.jsx'
 
 const CountContainer = () => {
     const [count, setCount] = useState(0)

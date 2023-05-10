@@ -1,4 +1,4 @@
-const CountButton = ({name}, method) => {
+const CountButton = ({name, method}) => {
     return (
         <button onClick={method}>{name}</button>
     )
